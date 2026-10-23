@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/horacioparisotto/firestore-cost-patterns/actions/workflows/ci.yml/badge.svg)](https://github.com/horacioparisotto/firestore-cost-patterns/actions/workflows/ci.yml)
 
-Patterns from **[HarrisTime.ca](https://harristime.ca/)**, a production arena-scheduling and digital-signage platform in Canada: 30+ screens across 17 facilities for 10 client organizations, including municipalities. I traced a runaway Firebase bill to queries loading the entire database history and cut it from **$2,353 to $6.49 a month (−99.7%)**, then rebuilt the platform as one multi-venue system.
+Patterns from **[Harristime.ca](https://harristime.ca/)**, a production arena-scheduling and digital-signage platform in Canada: 30+ screens across 17 facilities for 10 client organizations, including municipalities. I traced a runaway Firebase bill to queries loading the entire database history and cut it from **$2,353 to $6.49 a month (−99.7%)**, then rebuilt the platform as one multi-venue system.
 
 > **Rewritten from scratch to protect client code.** This is not the production source: names, schemas and infrastructure are replaced. Firebase sits behind small interfaces with real Firestore adapters, and the tests run against in-memory stores, so everything here runs with no credentials.
 
